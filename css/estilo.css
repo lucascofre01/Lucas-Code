@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#navbarNav {
+  flex-direction: row-reverse;
+}
+
+.hero {
+  background-image: url(../img/computer-g344680259_1920.png);
+  height: 90vh;
+}
+
+.sobre-mi-inner {
+  display: grid;
+  grid-template-columns: 0.35fr 1fr;
+  grid-template-areas: "foto titulo" "foto texto";
+  margin: 2rem;
+}
+.sobre-mi-inner .quien-soy-foto {
+  grid-area: foto;
+}
+.sobre-mi-inner .quien-soy-foto img {
+  max-width: 100%;
+}
+.sobre-mi-inner .quien-soy-title {
+  grid-area: titulo;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 4rem;
+}
+.sobre-mi-inner .quien-soy-text {
+  grid-area: texto;
+}
+
+.container-info {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 0.35fr 1fr;
+  grid-template-areas: "foto titulo" "foto texto";
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+.container-info img {
+  grid-area: foto;
+  margin: auto;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container-info h2 {
+  font-family: "Noto Sans", sans-serif;
+  grid-area: titulo;
+  font-size: 3rem;
+}
+.container-info p {
+  grid-area: texto;
+  font-size: 1.1rem;
+}
+
+.gallery {
+  margin: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 150px;
+  grid-gap: 10px;
+}
+.gallery .gallery-item .item-img {
+  display: block;
+  margin: auto;
+  max-width: 150px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=estilo.css.map */

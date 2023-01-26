@@ -1,0 +1,23 @@
+@media screen and (max-width: 900px) {
+    .containerProyectos{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .containerProyectos{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .card{
+        margin: 20px;
+    }
+}
