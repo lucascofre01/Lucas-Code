@@ -1,27 +1,53 @@
-.sobre-mi-inner{
-    display: grid;
-    grid-template-columns: .35fr 1fr;
-    grid-template-areas: 
-            "foto titulo"
-            "foto texto";
-    margin:2rem;
+.title{
+    margin: 4rem;
+    display: flex;
+    justify-content: center;
 
-    .quien-soy-foto{
-        grid-area: foto;
+    h3{
+        font-size: 2rem;
+        color: white;
+        font-family: $fontText;
+        span{
+            background-color: $backgroundColor;
+        }
+    }
+}
 
-        img{
-            max-width: 100%;
+.container{
+    display: flex;
+    justify-content: center;
+
+    .sobre-mi{
+        h2{
+            font-family: $fontText;
+            font-size: 2rem;
+            text-align: center;
+            color: #fff;
+        span{
+            background-color: $backgroundColor;
+        }
         }
     }
 
-    .quien-soy-title{
-        grid-area: titulo;
-        font-family: $fontTitle;
-        font-size: 4rem;
-    }
+    .sobre-mi-inner{
+        display: grid;
+        grid-template-columns: .30fr 1fr;
+        grid-template-areas: 
+                "foto text";
 
-    .quien-soy-text{
-        grid-area: texto;
+        img{
+            grid-area: foto;
+            max-width: 100%;
+        }
+
+        p{
+            font-family: $fontText2;
+            margin: 2rem;
+            margin-top: 4rem;
+            display: flex;
+            justify-content: center;
+            grid-area: text;
+        }
     }
-    
 }
+

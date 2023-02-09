@@ -15,26 +15,26 @@
 
   <!-- BARRA DE NAVEGACION -->
   <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary "navbar bg-dark" data-bs-theme="dark"">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Lucas Code</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pages/proyectos.html">Proyectos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pages/contacto.html">Contacto</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary "navbar bg-dark" data-bs-theme="dark"">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">Lucas Code</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pages/proyectos.html">Proyectos</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+        </div>
+      </div>
         </nav>
   </header>
       <!-- BARRA DE NAVEGACION -->
@@ -45,57 +45,84 @@
         <h2 class="text-white bg-dark">Bienvenidos a mi pagina web</h2>
       </section>
     </main>
+    <!-- MAIN CONTENT -->
+
 
     <!-- INFORMACION SOBRE MI -->
-    <section class="section" id="sobre-mi">
-      <div class="container">
-        <div class="sobre-mi-inner">
-          <div class="quien-soy-foto">
-            <img src="img/avatar.jpeg" alt="Avatar">
+    <div class="title">
+      <h3>
+        <span>Informacion sobre mi</span>
+      </h3>
+    </div>
+
+    <section class="container">
+      <div class="sobre-mi">
+          <h2><span>Sobre mi</span></h2>
+          <div class="sobre-mi-inner">
+              <img src="/img/avatar.jpeg" alt="Avatar">
+              <p>Hola, mi nombre es Lucas y soy un estudiante apasinado de la programacion y para adentrarme en este mundo decidi empezar por el desarrollo web</p>
           </div>
-            <h2 class="quien-soy-title">¿Quien soy?</h2>
-            <p class="quien-soy-text">Soy un estudiante de programacion y para adentrarme en esta profesion elegi empezar con el desarrollo web</p>
-        </div>
-      </section>
+      </div>
+  </section>
     <!-- INFORMACION SOBRE MI -->
 
     <!-- SECCION DE HABILIDADES -->
-
-    <div class="container">
-      <div class="container-info">
-        <img src="img/skills.png" alt="">
-        <h2>¿Que conocimientos manejo o cuales son mis habilidades?</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed dicta laboriosam quae harum facilis, commodi aspernatur dolorum labore temporibus numquam magni eveniet eaque similique minima hic ipsum quis tempore ratione.</p>
+    <section class="container">
+      <div class="skill">
+        <h2><span>Habilidades</span></h2>
+        <div class="skill-inner">
+          <img src="/img/skills.png" alt="">
+          <p>A continuacion podras ver los lenguajes y tecnologias relacionadas a la programacion que he podido aprender hasta el momento</p>
+        </div>
+        <div class="gallery">
+          <div class="gallery-item">
+              <img class="item-img" src="img/html-5.png" alt="Html">
+          </div>
+          
+          <div class="gallery-item">
+              <img class="item-img" src="img/css-3.png" alt="Css">
+          </div>
+  
+          <div class="gallery-item">
+              <img class="item-img" src="img/git.png" alt="Git">
+          </div>
+  
+          <div class="gallery-item">
+              <img class="item-img" src="img/github.png" alt="GitHub">
+          </div>
+  
+          <div class="gallery-item">
+              <img class="item-img" src="img/bootstrap.png" alt="Bootstrap">
+          </div>
+  
+          <div class="gallery-item">
+              <img class="item-img" src="img/sass.png" alt="SASS">
+          </div>
+        </div>
       </div>
-      <div class="gallery">
-        <div class="gallery-item">
-            <img class="item-img" src="img/html-5.png" alt="Html">
-        </div>
-        
-        <div class="gallery-item">
-            <img class="item-img" src="img/css-3.png" alt="Css">
-        </div>
-
-        <div class="gallery-item">
-            <img class="item-img" src="img/git.png" alt="Git">
-        </div>
-
-        <div class="gallery-item">
-            <img class="item-img" src="img/github.png" alt="GitHub">
-        </div>
-
-        <div class="gallery-item">
-            <img class="item-img" src="img/bootstrap.png" alt="Bootstrap">
-        </div>
-
-        <div class="gallery-item">
-            <img class="item-img" src="img/sass.png" alt="SASS">
-        </div>
-        
-    </div>
-    </div>
-
+    </section>
+      </section>
     <!-- SECCION DE HABILIDADES -->
+
+    <!-- PROYECTO -->
+    <div class="container">
+      <div class="proyecto">
+        <h2>
+          <span>Proyectos</span>
+        </h2>
+        <div class="proyecto-inner">
+          <img src="/img/proyecto.jpg" alt="Mis proyectos">
+          <p>Haciendo click en el siguiente boton podras encontrarte con todos los trabajos y proyectos en los que trabaje o estoy trabajando</p>
+          <button class="btn btn-primary" type="button"><a href="/pages/proyectos.html">Ir a proyectos</a></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ESPACIO -->
+
+    <div class="espacio"></div>
+
+    <!-- ESPACIO -->
     
     <!-- MAIN CONTENT -->
     

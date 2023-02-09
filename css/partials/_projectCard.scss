@@ -1,0 +1,42 @@
+.section{
+    height: 100vh;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    span{
+        margin-top: 1rem;
+        padding: .5rem;
+        background-color: $backgroundColor;
+        color: #fff;
+        font-family: $fontText;
+        font-size: 2rem;
+    }
+}
+
+.containerProyectos{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card:hover{
+    transform: translateY(-15px);
+}
+
+.btn-primary {
+    background-color: #161616;
+    border-color: #161616;
+}
+
+.btn-primary:hover {
+    color: #161616;
+    background-color: yellow;
+}
+
+.espacio-vacio{
+    height: 80px;
+}
