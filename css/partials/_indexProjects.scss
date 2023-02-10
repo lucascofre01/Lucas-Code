@@ -137,34 +137,29 @@
         .proyecto{
             .proyecto-inner{
                 display: grid;
-                grid-template-columns: .35fr 1fr;
+                grid-template-columns: .50fr 1fr;
                 grid-template-areas: 
                         "foto texto"
-                        "foto boton";
+                        "boton boton";
             }
             img{
                 grid-area: foto;
                 margin-top: 1rem;
-                margin-top: 1rem;
                 height: 15rem;
-                max-width: 15rem;
-                padding-right: 2rem;
+                width: 15rem;
+                overflow: hidden;
             }
             p{
                 grid-area: texto;
             }
             button{
                 grid-area: boton;
-                margin-right: 10rem;
-                height: 3rem;
-                max-width: 7rem;
 
             a{
                 font-size: 1rem;
             }
             }
         }
-    }
 }
 
 @media screen and (max-width: 384px){
@@ -203,4 +198,4 @@
     }
 
 }
-
+}

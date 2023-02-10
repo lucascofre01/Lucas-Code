@@ -233,31 +233,27 @@
 @media screen and (max-width: 767px) {
   .container .proyecto .proyecto-inner {
     display: grid;
-    grid-template-columns: 0.35fr 1fr;
-    grid-template-areas: "foto texto" "foto boton";
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-areas: "foto texto" "boton boton";
   }
   .container .proyecto img {
     grid-area: foto;
     margin-top: 1rem;
-    margin-top: 1rem;
     height: 15rem;
-    max-width: 15rem;
-    padding-right: 2rem;
+    width: 15rem;
+    overflow: hidden;
   }
   .container .proyecto p {
     grid-area: texto;
   }
   .container .proyecto button {
     grid-area: boton;
-    margin-right: 10rem;
-    height: 3rem;
-    max-width: 7rem;
   }
   .container .proyecto button a {
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 384px) {
+@media screen and (max-width: 767px) and (max-width: 384px) {
   .container .proyecto h2 span {
     font-size: 1.5rem;
   }
