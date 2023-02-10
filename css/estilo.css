@@ -154,6 +154,7 @@
   max-width: 15%;
   max-height: 80%;
   background-color: #212121;
+  border-color: #fff;
 }
 .proyecto .proyecto-inner button a {
   color: #fff;
@@ -263,19 +264,21 @@
   .container .proyecto .proyecto-inner {
     display: grid;
     grid-template-columns: 0.75fr 1fr;
-    grid-template-areas: "foto texto" "foto boton";
+    grid-template-areas: "foto texto" "boton boton";
   }
   .container .proyecto .proyecto-inner img {
     grid-area: foto;
-    margin-top: 1rem;
-    margin-top: 1rem;
     height: 10rem;
-    max-width: 10rem;
+    width: 10rem;
   }
   .container .proyecto .proyecto-inner p {
     grid-area: texto;
+    margin-top: 1rem;
+    font-size: 0.9rem;
   }
   .container .proyecto .proyecto-inner button {
+    height: 4rem;
+    width: 5rem;
     grid-area: boton;
   }
 }
